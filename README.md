@@ -1,6 +1,6 @@
 # Portfolio
 
-This is a repository of my portfolio website.
+This is a repository of my portfolio website. Created with ReactJS
 
 ## Getting Started with Create React App
 
