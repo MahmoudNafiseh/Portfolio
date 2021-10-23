@@ -3,6 +3,8 @@ import { Flex } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import Logo from './Logo';
 import { Fade } from '@chakra-ui/transition';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+
 const MotionLogo = motion(Logo);
 
 const Cover = React.forwardRef<HTMLDivElement>((props, ref) => {
@@ -16,7 +18,7 @@ const Cover = React.forwardRef<HTMLDivElement>((props, ref) => {
       <Flex
          bg='#1c1f24'
          height='100vh'
-         w='full'
+         w='100%'
          alignItems='center'
          justify='center'
          direction='column'

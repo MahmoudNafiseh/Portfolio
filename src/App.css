@@ -13,7 +13,7 @@
 
    box-shadow: 0 -5px 5px rgb(221, 221, 221);
    cursor: pointer;
-   transition: all 0.5s ease-in;
+   transition: all 0.3s ease-in;
 
    animation: spin 2.5s linear infinite;
 }
