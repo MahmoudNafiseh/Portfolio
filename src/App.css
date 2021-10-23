@@ -1,10 +1,15 @@
-.border:hover {
+.border:hover,
+.border:focus,
+.svg::after {
    border-radius: 50%;
    border-top: 5px solid turquoise;
 
    box-shadow: 0 -5px 5px purple;
    cursor: pointer;
    animation: spin 2.5s linear infinite;
+   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+   user-select: none;
 }
 .border {
    position: absolute;
@@ -16,6 +21,9 @@
    transition: all 0.3s ease-in;
 
    animation: spin 2.5s linear infinite;
+   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+   user-select: none;
 }
 @keyframes spin {
    0% {
@@ -25,4 +33,9 @@
    100% {
       transform: rotate(360deg);
    }
+}
+.svg {
+   cursor: pointer;
+   width: 100%;
+   height: auto;
 }
